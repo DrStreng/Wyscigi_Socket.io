@@ -1,0 +1,206 @@
+// @color: #4D926F;
+//
+// #header {
+//   color: @color;
+// }
+// h2 {
+//   color: @color;
+// }
+@bg_color: #181818;
+@text_color :#000000;
+@niebieski:#28aadc;
+@placeholder:#646464;
+@border:#3c3c3c;
+@bg_submit:#121212;
+@color_white:#ffffff;
+@bg_submit2:#0E0E0E;
+
+
+body{
+  margin: 0px;
+  background-color:@bg_color;
+  color:@text_color;
+  #wprowadz_haslo{
+    border : solid 1px @text_color;
+    border-radius : 3px;
+    color : @color_white;
+    background : @bg_submit;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-81px;
+    margin-left: -121px;
+    width:200px;
+    height: 120px;
+    z-index: 2;
+    .odstep{
+      padding: 3px;
+      .admin_button{
+        position: relative;
+        top: -6px;
+        border : solid 1px @text_color;
+        border-radius : 3px;
+        color : @color_white;
+        background : @bg_submit2;
+        padding: 5px;
+      }
+    }
+
+    #tajne_haslo_input{
+      border : solid 1px @text_color;
+      border-radius : 3px;
+      color : @color_white;
+      background : @bg_submit2;
+      padding: 5px;
+    }
+    #tajne_haslo_submit{
+      height: 35px;
+      border : solid 1px @text_color;
+      border-radius : 3px;
+      color : @color_white;
+      background : @bg_submit2;
+
+    }
+  }
+  #poczekalnia_sedziow{
+    p{
+      color:@color_white;
+    }
+    #sedziowie{
+      color:@color_white;
+    }
+    #content{
+      .table_dodaj_noty{
+        color:@color_white;
+      }
+      input[type=number]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+      }
+      input{
+        border : solid 1px @text_color;
+        border-radius : 3px;
+        color : @color_white;
+        background : @bg_submit2;
+        padding: 5px;
+      }
+      button{
+        height: 35px;
+        border : solid 1px @text_color;
+        border-radius : 3px;
+        color : @color_white;
+        background : @bg_submit2;
+      }
+    }
+  }
+  .content{
+    margin:0;
+    ::-webkit-input-placeholder {
+        color: @placeholder;
+    }
+    a{
+      color:@niebieski;
+      text-decoration: none;
+    }
+    .wyniki{
+      position: absolute;
+      left: 0;
+      h2{
+      }
+      .tabelka{
+        color:@color_white;
+        padding:5px;
+        tr{
+          td{
+            color:@color_white;
+            padding: 5px;
+          }
+        }
+      }
+    }
+    .chat{
+      // border-left:1px solid @placeholder;
+      right:0;
+      width:340px;
+      top:0;
+      position: absolute;
+      padding: 1px;
+      bottom: 0px;
+
+      .chat_user_header{
+        padding: 15px;
+        #chat_user_header_name{
+          width: 200px;
+          border : solid 1px @text_color;
+          border-radius : 3px;
+          color : @color_white;
+          background : @bg_submit;
+        }
+        #chat_user_header_name_submit{
+          width: 70px;
+          border : solid 1px @text_color;
+          border-radius : 3px;
+          color : @color_white;
+          background : @bg_submit;
+        }
+        #chat_user_header_name_error{
+          color:@niebieski;
+        }
+      }
+      ::-webkit-scrollbar {
+          width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color:@niebieski;
+      }
+      .scrollbar{
+        overflow-y: scroll;
+        right:0;
+        height: 83%;
+        p{
+          color:@niebieski;
+        }
+        .chat_data{
+
+          left:0;
+          font-size: 22px;
+        }
+      }
+      .chat_send_data{
+        padding: 15px 25px 25px 25px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        #chat_send_data{
+          position: relative;
+          left:0px;
+          width: 200px;
+          height: 40px;
+          padding: 7px;
+          resize: none;
+          border : solid 1px @text_color;
+          border-radius : 3px;
+          color : @color_white;
+          background : @bg_submit;
+        }
+        #chat_send_data_submit{
+          position: relative;
+          right:0;
+          width: 70px;
+          height: 46px;
+          border : solid 1px @text_color;
+          border-radius : 3px;
+          color : @color_white;
+          background : @bg_submit;
+        }
+      }
+    }
+  }
+}

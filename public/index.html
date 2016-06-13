@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zawody</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="content">
+    <a href="./sedziowie.html">Sędziuj</a>
+    <div class="wyniki">
+
+    </div>
+    <div class="chat">
+      <div class="chat_user_header">
+        <input type="text" id="chat_user_header_name" placeholder="Podaj nick chatu">
+        <button type="submit" id="chat_user_header_name_submit">Zatwierdz</button>
+        <div id="chat_user_header_name_error"></div>
+      </div>
+      <div class="scrollbar" id="s1">
+        <div id="chat_data">
+        </div>
+      </div>
+      <div class="chat_send_data">
+        <table>
+        <tr>
+          <td><textarea id="chat_send_data" placeholder="Wyślij wiadomość"></textarea></td>
+          <td><button type="submit" id="chat_send_data_submit">Zatwierdz</button></td>
+        </tr>
+      </table>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/lib/jquery.min.js"></script>
+  <script src="/js/czat.js"></script>
+</body>
+</html>

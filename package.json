@@ -1,0 +1,28 @@
+{
+  "name": "tin_projekt",
+  "version": "1.0.0",
+  "description": "Projekt posiadający 2 komponenty Server + dowolną liczbę klientow (oceniających) i widzow\r ,ktozy przeglądają ranking wynikow\r Istnieją zawody KONI, ktore sa oceniane przez sedziow w % kategoriach:\r -T\r -G\r -K\r -N\r -R\r Sedziowe oceniaja KONIA wedlug powyzszych kategorii.\r Koń jest reprezentowany przez NR STARTOWY.\r Widzowie ogladaja RANKING KONI splywajacy od sedziow\r Tabela wynikow jest aktualizowana po zebraniu wynikow",
+  "scripts": {
+    "db": "node script.js",
+    "main": "node index.js",
+    "start": "npm run db && npm run main "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Strengol@bitbucket.org/Strengol/tin_projekt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Strengol/tin_projekt#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "body-parser": "^1.14.2",
+    "bower": "^1.7.7",
+    "express": "^4.13.4",
+    "less-middleware": "^2.0.1",
+    "mongoose": "^4.3.7",
+    "socket.io": "^1.4.4",
+    "underscore": "^1.8.3"
+  }
+}
